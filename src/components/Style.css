@@ -1,0 +1,181 @@
+label {
+  font-size: 20px;
+  margin: 9px 5px 9px 2px;
+  display: block;
+}
+
+.homeBackground {
+  background-color: beige;
+}
+
+.homeContainer {
+  background-color: rgb(179, 245, 228);
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.homeContainer label {
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 38px;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.homeContainer input {
+  height: 45px;
+  width: 150px;
+}
+
+.homeContainer select {
+  margin-top: 5px;
+  height: 40px;
+  width: 150px;
+  background-color: #eee;
+}
+
+.homeContainer select option {
+  background-color: rgb(224, 250, 176);
+}
+
+.homeContainer button {
+  height: 40px;
+  padding-top: 6px;
+  margin-left: 70px;
+}
+
+.productContainer {
+  background-color: rgb(179, 245, 228);
+  padding: 40px;
+  margin: 48px 48px 0px 48px;
+}
+
+.productContainer div {
+  height: 200px;
+}
+
+.productContainer div div img {
+  width: 100%;
+  height: 200px;
+}
+
+.productDescription {
+  margin: 0px;
+  font-size: 16px;
+}
+
+.productContainer div div button {
+  margin-top: 32px;
+  height: 50px;
+}
+
+.productName {
+  margin: 0px;
+  font-size: 28px;
+}
+
+.productPrice {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.cartContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.cartContainer h4 {
+  position: absolute;
+  top: 25%;
+}
+
+.cartContainer Button {
+  margin-left: 520px;
+  background-color: green;
+}
+
+.cartItemContainer {
+  background-color: rgb(242, 255, 247);
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 150px;
+}
+
+.cartItemContainerImage1 {
+  width: 250px;
+  height: 150px;
+}
+
+.cartItemContainerImage2 {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 2px;
+}
+
+.cartQunatityChange {
+  display: flex;
+  align-items: center;
+}
+
+.cartQunatityChange span {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 28px;
+}
+
+.renderedOrders {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 1fr;
+  justify-content: center;
+}
+
+.renderedOrders span {
+  font-size: 20px;
+}
+
+.renderedOrders span:first-child {
+  grid-column: 2/3;
+}
+
+.orderItemHeading {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.orderContainer {
+  background-color: lightgray;
+}
+
+.orderHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderHeading h2 {
+  color: blue;
+}
+
+.orderHeading div h2 {
+  color: green;
+}
+
+.orderHeading div h5 {
+  text-align: center;
+}
+
+.orderContainer h4 {
+  text-align: end;
+}
+
+.productItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profileDetails div div p {
+  font-size: 24px;
+}
