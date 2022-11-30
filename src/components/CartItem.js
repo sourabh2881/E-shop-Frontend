@@ -29,6 +29,14 @@ export class CartItem extends Component {
     this.props.updateQuantity(event.target.id, this.state.quantity + 1);
   }
 
+  componentDidUpdate() {
+    if (this.state.quantity !== this.props.cartItems.quantity) {
+      this.setState({
+        quantity: this.props.cartItems.quantity,
+      });
+    }
+  }
+
   render() {
     return (
       <div className="m-5 cartItemContainer">
@@ -62,23 +70,6 @@ export class CartItem extends Component {
             id={this.props.cartItems.product.id}
             onClick={this.increaseQuantity}
           />
-          {/* <input
-            type="number"
-            placeholder="Quantity"
-            name="quantity"
-            onKeyPress={false}
-            onSelect={false}
-            value={this.state.quantity}
-            onChange={this.handleChange}
-            required
-          ></input>
-          
-          <img
-            src="./image/UpdateQuantity.png"
-            alt="Remove Button"
-            id={this.props.cartItems.product.id}
-            onClick={this.changeQuantity}
-          /> */}
         </div>
         <p className="productPrice">
           Rs. {this.props.cartItems.product.price * this.state.quantity}
